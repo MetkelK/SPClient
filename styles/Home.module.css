@@ -69,6 +69,7 @@
 
 .donationSection {
   padding: 3rem;
+  text-align: center;
 }
 
 .donationSection h2,
@@ -97,12 +98,23 @@
 .faqGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.faqGridSection {
+  padding: 1rem;
 }
 
 .faqSection h2,
 .faqSection p {
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .actionSection,

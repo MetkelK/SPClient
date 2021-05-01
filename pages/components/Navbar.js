@@ -14,9 +14,15 @@ export default function Navbar() {
         />
       </div>
       <div className={styles.navLinks}>
-        <a href="https://www.instagram.com/sickpayfund">In</a>
-        <a href="https://twitter.com/sickpayfund">Twit</a>
-        <a href="https://www.facebook.com/sickpayfund">Fb</a>
+        <a href="https://www.instagram.com/sickpayfund">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/sickpayfund">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sickpayfund">
+          <i class="fab fa-facebook"></i>
+        </a>
         <Link href="/donation">
           <a className={styles.donateButton}>Contribute Now</a>
         </Link>
