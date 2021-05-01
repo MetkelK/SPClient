@@ -68,73 +68,82 @@ export default function Home() {
 
       <div className={styles.faqSection}>
         <h2>FAQs</h2>
-
-        <h3>Who can access this fund?</h3>
-        <p>
-          This fund is for anyone who needs to call in sick to work, but is
-          worried about the financial risk. We will not require documentation of
-          your workplace, but trust that those accessing the fund are in need of
-          immediate support.
-        </p>
-
-        <h3>When will I receive funds?</h3>
-        <p>
-          We are aiming to be fast at processing the requests. The delay depends
-          on how much money we receive, when we can process your request, and
-          how urgently you say you need your money. We are hoping for between
-          2-5 days for each request, and we will try our best to be as fast as
-          possible.
-        </p>
-
-        <h3>How many times can I apply?</h3>
-        <p>
-          You can apply as many times as you would like, but for right now, we
-          can give out a maximum of $500 per person. This may change depending
-          on how much money we have access to!
-        </p>
-
-        <h3>How can I support the cause?</h3>
-        <p>
-          Contributing money to our fund helps provide immediate relief to
-          workers, allowing them to stay home, keep everyone safe and put food
-          on the table. You can{" "}
-          <Link href="/donation">
-            <a className={styles.anchorlink}>
-              contribute here at the GoFundMe.{" "}
-            </a>
-          </Link>
-        </p>
-
-        <h3>How much can I apply for?</h3>
-        <p>
-          You let us know how much money you will be losing by taking the time
-          off work, and we will do our best to give you as much as possible, up
-          to $500 total. This maximum may change depending on wider
-          circumstances.
-        </p>
-
-        <h3>How can I support the cause?</h3>
-        <p>
-          This fund cannot remove the need for mandated paid sick days for all
-          workers being becoming part of policy. The fight for paid sick days in
-          Ontario has been an ongoing effort by activists for decades. You can
-          support their work right now by taking action, signing petitions and
-          contacting your MPPs, and checking out more information about the
-          fight for paid sick days in Ontario by groups like the{" "}
-          <a
-            className={styles.anchorlink}
-            href="https://workersactioncentre.org/"
-          >
-            Workers’ Action Centre
-          </a>{" "}
-          and{" "}
-          <a
-            className={styles.anchorlink}
-            href="https://www.15andfairness.org/"
-          >
-            Fight for $15 and Fairness.
-          </a>
-        </p>
+        <div className={styles.faqGrid}>
+          <div className={styles.faqGridSection}>
+            <h3>Who can access this fund?</h3>
+            <p>
+              This fund is for anyone who needs to call in sick to work, but is
+              worried about the financial risk. We will not require
+              documentation of your workplace, but trust that those accessing
+              the fund are in need of immediate support.
+            </p>
+          </div>
+          <div className={styles.faqGridSection}>
+            <h3>When will I receive funds?</h3>
+            <p>
+              We are aiming to be fast at processing the requests. The delay
+              depends on how much money we receive, when we can process your
+              request, and how urgently you say you need your money. We are
+              hoping for between 2-5 days for each request, and we will try our
+              best to be as fast as possible.
+            </p>
+          </div>
+          <div className={styles.faqGridSection}>
+            <h3>How many times can I apply?</h3>
+            <p>
+              You can apply as many times as you would like, but for right now,
+              we can give out a maximum of $500 per person. This may change
+              depending on how much money we have access to!
+            </p>
+          </div>
+          <div className={styles.faqGridSection}>
+            <h3>How can I support the cause?</h3>
+            <p>
+              Contributing money to our fund helps provide immediate relief to
+              workers, allowing them to stay home, keep everyone safe and put
+              food on the table. You can{" "}
+              <Link href="/donation">
+                <a className={styles.anchorlink}>
+                  contribute here at the GoFundMe.{" "}
+                </a>
+              </Link>
+            </p>
+          </div>
+          <div className={styles.faqGridSection}>
+            <h3>How much can I apply for?</h3>
+            <p>
+              You let us know how much money you will be losing by taking the
+              time off work, and we will do our best to give you as much as
+              possible, up to $500 total. This maximum may change depending on
+              wider circumstances.
+            </p>
+          </div>
+          <div className={styles.faqGridSection}>
+            <h3>How can I support the cause?</h3>
+            <p>
+              This fund cannot remove the need for mandated paid sick days for
+              all workers being becoming part of policy. The fight for paid sick
+              days in Ontario has been an ongoing effort by activists for
+              decades. You can support their work right now by taking action,
+              signing petitions and contacting your MPPs, and checking out more
+              information about the fight for paid sick days in Ontario by
+              groups like the{" "}
+              <a
+                className={styles.anchorlink}
+                href="https://workersactioncentre.org/"
+              >
+                Workers’ Action Centre
+              </a>{" "}
+              and{" "}
+              <a
+                className={styles.anchorlink}
+                href="https://www.15andfairness.org/"
+              >
+                Fight for $15 and Fairness.
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className={styles.actionSection}>
@@ -147,6 +156,19 @@ export default function Home() {
           <a className={styles.donateButton}>Support Workers Now</a>
         </Link>
       </div>
+
+      <div className={styles.alertSection}>
+        <h3>
+          *THIS PAGE IS UNDER DEVELOPMENT - APPLICATION FORM, TRANSLATIONS AND
+          MORE RESOURCES ARE COMING SOON*
+        </h3>
+      </div>
+
+      <footer className={styles.footerSection}>
+        <p>
+          Greater Toronto Area, Ontario, Canada | sickpaysolidarity@gmail.com
+        </p>
+      </footer>
     </div>
   );
 }

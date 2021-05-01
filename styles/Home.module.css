@@ -12,13 +12,13 @@
   position: relative;
   height: 6.25vh;
   width: 12.5vw;
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .navLinks {
   width: 50%;
   text-align: right;
-  padding-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .navLinks > a:nth-child(-n + 3) {
@@ -83,7 +83,7 @@
   color: #fff;
   background-color: #7877e6;
   border-color: #7877e6;
-  padding: 1.1rem 1.837rem;
+  padding: 1rem 1.5rem;
 }
 
 .donateButton:hover {
@@ -94,12 +94,33 @@
   padding: 3rem;
 }
 
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .faqSection h2,
 .faqSection p {
   margin-bottom: 3rem;
 }
 
-.actionSection {
+.actionSection,
+.alertSection {
   padding: 3rem;
   margin: 0;
+  text-align: center;
+}
+
+.footerSection {
+  background-color: #4f4f4f;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSection p {
+  text-align: center;
+  color: #fff;
 }
