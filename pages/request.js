@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar";
 import DonateForm from "./components/DonateForm";
+import RequestForm from "./components/RequestForm";
 
-export default function Donation() {
+export default function Requests() {
   return (
     <div>
       <Navbar />
-      <DonateForm />
+      <RequestForm />
     </div>
   );
 }
