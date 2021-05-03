@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -170,12 +171,7 @@ export default function Home() {
           MORE RESOURCES ARE COMING SOON*
         </h3>
       </div>
-
-      <footer className={styles.footerSection}>
-        <p>
-          Greater Toronto Area, Ontario, Canada | sickpaysolidarity@gmail.com
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
