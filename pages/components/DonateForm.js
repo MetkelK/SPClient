@@ -113,7 +113,7 @@ export default function DonateForm() {
       </form>
       {processing && (
         <div className={styles.processSpinner}>
-          <i className="fas fa-spinner fa-spin"></i>
+          <i className="fa fa-spinner fa-pulse fa-fw"></i>
         </div>
       )}
     </div>
