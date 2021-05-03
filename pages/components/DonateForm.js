@@ -44,22 +44,22 @@ export default function DonateForm() {
     e.preventDefault();
     const stripe = await stripePromise;
     //Call your backend to create the Checkout Session
-    // const response = await fetch(
-    //   `${process.env.NEXT_PUBLIC_API_URL}donations/payments`,
-    //   {
-    //     method: "POST",
-    //   }
-    // );
-    // const session = await response.json();
-    // // When the customer clicks on the button, redirect them to Checkout.
-    // const result = await stripe.redirectToCheckout({
-    //   sessionId: secret,
-    // });
-    // if (result.error) {
-    //   // If `redirectToCheckout` fails due to a browser or network
-    //   // error, display the localized error message to your customer
-    //   // using `result.error.message`.
-    // }
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}donations/payments`,
+      {
+        method: "POST",
+      }
+    );
+    const session = await response.json();
+    // When the customer clicks on the button, redirect them to Checkout.
+    const result = await stripe.redirectToCheckout({
+      sessionId: secret,
+    });
+    if (result.error) {
+      // If `redirectToCheckout` fails due to a browser or network
+      // error, display the localized error message to your customer
+      // using `result.error.message`.
+    }
   };
 
   return (
