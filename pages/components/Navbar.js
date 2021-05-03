@@ -28,10 +28,10 @@ export default function Navbar() {
           <i className="fab fa-facebook"></i>
         </a> */}
         <Link href="/donation">
-          <a className={styles.donateButton}>Contribute Now</a>
+          <a className={styles.navButton}>Contribute Now</a>
         </Link>
         <Link href="/request">
-          <a className={styles.donateButton}>Request Pay</a>
+          <a className={styles.navButton}>Apply for funds</a>
         </Link>
       </div>
     </nav>

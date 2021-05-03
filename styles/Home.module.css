@@ -16,14 +16,20 @@
 }
 
 .navLinks {
-  width: 50%;
+  width: auto;
   text-align: right;
   margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.navLinks > a:nth-child(-n + 3) {
+.navButton {
+  /* border-radius: 30px; */
+  padding: 0.5rem;
+  margin: 0 0.25rem;
   color: #fff;
-  padding: 0 0.5rem;
+  text-align: center;
+  /* background-color: #7877e6; */
 }
 
 .anchorlink {
@@ -115,6 +121,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
+  .faqSection p {
+    margin-bottom: 0;
+  }
 }
 
 .actionSection,
@@ -135,4 +145,49 @@
 .footerSection p {
   text-align: center;
   color: #fff;
+}
+
+.donateSection {
+  padding: 3rem;
+}
+
+.donateForm {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.donateForm label,
+.donateForm input {
+  margin-bottom: 1rem;
+}
+
+.donateForm button {
+  border-radius: 30px;
+  transition: 0.1s opacity linear;
+  display: inline-block;
+  color: #fff;
+  background-color: #7877e6;
+  border-color: #7877e6;
+  padding: 1rem 1.5rem;
+}
+
+.donateForm button:hover {
+  opacity: 0.8;
+}
+
+.donateForm button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.processSpinner {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
