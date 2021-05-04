@@ -54,7 +54,7 @@ export default function DonateForm() {
 
   return (
     <div>
-      <div className={styles.requestFAQ}>
+      <div className="requestFAQ">
         <h1>Who can access this fund?</h1>
         <p>
           This fund is for anyone who should not go to work because they are
@@ -88,7 +88,7 @@ export default function DonateForm() {
         </p>
       </div>
 
-      <form onSubmit={sendMessage} className={styles.requestForm}>
+      <form onSubmit={sendMessage} className="requestForm">
         <label htmlFor="InputName">Name</label>
         <input
           type="text"
@@ -123,7 +123,7 @@ export default function DonateForm() {
         <button type="submit">Send Message</button>
         <p>{alertmessage}</p>
         {processing && !error && (
-          <div className={styles.processSpinner}>
+          <div className="processSpinner">
             <i className="fa fa-spinner fa-pulse fa-fw"></i>
           </div>
         )}

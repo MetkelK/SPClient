@@ -29,12 +29,13 @@ export default function DonateForm() {
         .then((data) => {
           setSecret(data.id);
           console.log(data);
+          setDisabled(false);
         });
     }
   }, [amount]);
 
   const handleChange = async (e) => {
-    setDisabled(e.empty);
+    // setDisabled(e.empty);
     setAmount(e.target.value);
   };
 

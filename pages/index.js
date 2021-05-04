@@ -21,7 +21,6 @@ export default function Home() {
         ></script>
       </Head>
       <Navbar />
-      {/* <div className={styles.banner}> */}
       <Image
         src="/2+sick+pay+banner.png"
         alt="Banner Image"
@@ -29,8 +28,7 @@ export default function Home() {
         width={1200}
         height={800}
       />
-      {/* </div> */}
-      <div className={styles.mainSection}>
+      <div className="mainSection">
         <h2>Who is the Sick Pay Solidarity Collective?</h2>
         <p>
           The Sick Pay Solidarity Collective are workers who want universal paid
@@ -50,9 +48,9 @@ export default function Home() {
         </h3>
       </div>
 
-      <div className={styles.donationSection}>
+      <div className="donationSection">
         <Link href="/donation">
-          <a className={styles.donateButton}>Contribute Now</a>
+          <a className="donateButton">Contribute Now</a>
         </Link>
         <h2>
           SUPPORT YOUR COMMUNITY BY DONATING TO THE SICK PAY SOLIDARITY FUND
@@ -74,10 +72,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.faqSection}>
+      <div className="faqSection">
         <h2>FAQs</h2>
-        <div className={styles.faqGrid}>
-          <div className={styles.faqGridSection}>
+        <div className="faqGrid">
+          <div className="faqGridSection">
             <h3>Who can access this fund?</h3>
             <p>
               This fund is for anyone who needs to call in sick to work, but is
@@ -86,7 +84,7 @@ export default function Home() {
               the fund are in need of immediate support.
             </p>
           </div>
-          <div className={styles.faqGridSection}>
+          <div className="faqGridSection">
             <h3>When will I receive funds?</h3>
             <p>
               We are aiming to be fast at processing the requests. The delay
@@ -96,7 +94,7 @@ export default function Home() {
               best to be as fast as possible.
             </p>
           </div>
-          <div className={styles.faqGridSection}>
+          <div className="faqGridSection">
             <h3>How many times can I apply?</h3>
             <p>
               You can apply as many times as you would like, but for right now,
@@ -104,16 +102,14 @@ export default function Home() {
               depending on how much money we have access to!
             </p>
           </div>
-          <div className={styles.faqGridSection}>
+          <div className="faqGridSection">
             <h3>How can I support the cause?</h3>
             <p>
               Contributing money to our fund helps provide immediate relief to
               workers, allowing them to stay home, keep everyone safe and put
               food on the table. You can{" "}
               <Link href="/donation">
-                <a className={styles.anchorlink}>
-                  contribute here at the GoFundMe.{" "}
-                </a>
+                <a className="anchorlink">contribute here at the GoFundMe. </a>
               </Link>
             </p>
           </div>
@@ -126,7 +122,7 @@ export default function Home() {
               wider circumstances.
             </p>
           </div>
-          <div className={styles.faqGridSection}>
+          <div className="faqGridSection">
             <h3>How can I support the cause?</h3>
             <p>
               This fund cannot remove the need for mandated paid sick days for
@@ -136,17 +132,11 @@ export default function Home() {
               signing petitions and contacting your MPPs, and checking out more
               information about the fight for paid sick days in Ontario by
               groups like the{" "}
-              <a
-                className={styles.anchorlink}
-                href="https://workersactioncentre.org/"
-              >
+              <a className="anchorlink" href="https://workersactioncentre.org/">
                 Workers’ Action Centre
               </a>{" "}
               and{" "}
-              <a
-                className={styles.anchorlink}
-                href="https://www.15andfairness.org/"
-              >
+              <a className="anchorlink" href="https://www.15andfairness.org/">
                 Fight for $15 and Fairness.
               </a>
             </p>
@@ -154,7 +144,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.actionSection}>
+      <div className="actionSection">
         <h2>Take Action</h2>
         <p>
           Ready to take the next step? You can become a contributor to the
@@ -165,7 +155,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className={styles.alertSection}>
+      <div className="alertSection">
         <h3>
           *THIS PAGE IS UNDER DEVELOPMENT - APPLICATION FORM, TRANSLATIONS AND
           MORE RESOURCES ARE COMING SOON*
