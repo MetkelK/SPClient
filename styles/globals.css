@@ -14,3 +14,251 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.nav {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.navImage {
+  position: relative;
+  height: 6.25vh;
+  width: 12.5vw;
+  margin-left: 1.5rem;
+}
+
+.navLinks {
+  width: auto;
+  text-align: right;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navButton {
+  /* border-radius: 30px; */
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  color: #fff;
+  text-align: center;
+  /* background-color: #7877e6; */
+}
+
+.anchorlink {
+  color: #7877e6;
+  text-decoration: underline;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSection {
+  padding: 3rem;
+}
+
+.mainSection p {
+  margin-bottom: 3rem;
+}
+
+.donationSection {
+  padding: 3rem;
+  text-align: center;
+}
+
+.donationSection h2,
+.donationSection p {
+  margin-bottom: 3rem;
+}
+
+.donateButton {
+  border-radius: 300px;
+  transition: 0.1s opacity linear;
+  display: inline-block;
+  color: #fff;
+  background-color: #7877e6;
+  border-color: #7877e6;
+  padding: 1rem 1.5rem;
+}
+
+.donateButton:hover {
+  opacity: 0.8;
+}
+
+.faqSection {
+  padding: 3rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.faqGridSection {
+  padding: 1rem;
+}
+
+.faqSection h2,
+.faqSection p {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .faqSection p {
+    margin-bottom: 0;
+  }
+}
+
+.actionSection,
+.alertSection {
+  padding: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.footerSection {
+  background-color: #4f4f4f;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSection p {
+  text-align: center;
+  color: #fff;
+}
+
+.footerIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerIcons > * {
+  margin: 0 0.5rem;
+  color: #fff;
+}
+
+.donateSection {
+  padding: 3rem;
+}
+
+.donateForm {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.donateForm label,
+.donateForm input {
+  margin-bottom: 1rem;
+}
+
+.donateForm button {
+  border-radius: 30px;
+  transition: 0.1s opacity linear;
+  display: inline-block;
+  color: #fff;
+  background-color: #7877e6;
+  border-color: #7877e6;
+  padding: 1rem 1.5rem;
+}
+
+.donateForm button:hover {
+  opacity: 0.8;
+}
+
+.donateForm button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.processSpinner {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.requestFAQ {
+  padding: 3rem;
+}
+
+.requestForm {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.requestForm input,
+.requestForm textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+}
+
+.requestForm button {
+  border-radius: 30px;
+  transition: 0.1s opacity linear;
+  display: inline-block;
+  color: #fff;
+  background-color: #7877e6;
+  border-color: #7877e6;
+  padding: 1rem 1.5rem;
+}
+
+.requestForm button:hover {
+  opacity: 0.8;
+}

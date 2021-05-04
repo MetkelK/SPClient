@@ -42,8 +42,9 @@ export default function DonateForm() {
     setProcessing(true);
     setDisabled(true);
     e.preventDefault();
+
     const stripe = await stripePromise;
-    //Call your backend to create the Checkout Session
+
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}donations/payments`,
       {
@@ -51,7 +52,7 @@ export default function DonateForm() {
       }
     );
     const session = await response.json();
-    // When the customer clicks on the button, redirect them to Checkout.
+
     const result = await stripe.redirectToCheckout({
       sessionId: secret,
     });
@@ -59,12 +60,14 @@ export default function DonateForm() {
       // If `redirectToCheckout` fails due to a browser or network
       // error, display the localized error message to your customer
       // using `result.error.message`.
+      setError(result.error.message);
+      console.log(result.error.message);
     }
   };
 
   return (
     <div>
-      <div className={styles.donateSection}>
+      <div className="donateSection">
         <h1>How can I support the cause?</h1>
         <p>
           Contributing money to our fund helps provide immediate relief to
@@ -81,15 +84,17 @@ export default function DonateForm() {
           by taking action, signing petitions and contacting your MPPs, and
           checking out more information about the fight for paid sick days in
           Ontario by groups like the{" "}
-          <a href="https://workersactioncentre.org/">Workers’ Action Centre</a>{" "}
+          <a href="https://workersactioncentre.org/" target="_blank">
+            Workers’ Action Centre
+          </a>{" "}
           and{" "}
-          <a href="https://www.15andfairness.org/">
+          <a href="https://www.15andfairness.org/" target="_blank">
             Fight for $15 and Fairness
           </a>
           .
         </p>
       </div>
-      <form onSubmit={handleSubmit} className={styles.donateForm}>
+      <form onSubmit={handleSubmit} className="donateForm">
         <label htmlFor="donationAmount">Amount</label>
         <input
           type="number"
@@ -103,10 +108,11 @@ export default function DonateForm() {
         </button>
       </form>
       {processing && (
-        <div className={styles.processSpinner}>
+        <div className="processSpinner">
           <i className="fa fa-spinner fa-pulse fa-fw"></i>
         </div>
       )}
+      {error && <div>{error}</div>}
     </div>
   );
 }
