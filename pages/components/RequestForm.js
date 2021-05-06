@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
 
 export default function DonateForm() {
-  const [name, setName] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -14,13 +15,14 @@ export default function DonateForm() {
   const sendMessage = async (e) => {
     e.preventDefault();
     const info = {
-      Name: name,
+      First: firstname,
+      Last: lastname,
       Phone: number,
       Email: email,
       Message: message,
     };
 
-    if (name && number && email && message) {
+    if (firstname && lastname && number && email && message) {
       setProcessing(true);
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}pay-requests`,
@@ -39,13 +41,14 @@ export default function DonateForm() {
         setError(true);
         setProcessing(false);
         setAlertMessage(data.error);
+      } else {
+        setAlertMessage("Message Sent");
+        setFirstName("");
+        setLastName("");
+        setNumber("");
+        setEmail("");
+        setMessage("");
       }
-
-      setAlertMessage("Message Sent");
-      setName("");
-      setNumber("");
-      setEmail("");
-      setMessage("");
     } else {
       setError(true);
       setAlertMessage("Please fill out all fields");
@@ -89,12 +92,20 @@ export default function DonateForm() {
       </div>
 
       <form onSubmit={sendMessage} className="requestForm">
-        <label htmlFor="InputName">Name</label>
+        <label htmlFor="InputFirstName">First Name</label>
         <input
           type="text"
-          id="InputName"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
+          id="InputFirstName"
+          onChange={(e) => setFirstName(e.target.value)}
+          value={firstname}
+        ></input>
+
+        <label htmlFor="InputLastName">Last Name</label>
+        <input
+          type="text"
+          id="InputLastName"
+          onChange={(e) => setLastName(e.target.value)}
+          value={lastname}
         ></input>
 
         <label htmlFor="InputNumber">Phone Number</label>
