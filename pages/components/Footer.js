@@ -1,4 +1,4 @@
-// import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,21 +11,21 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-instagram"></i>
+          <i aria-hidden className="fab fa-instagram"></i>
         </a>
         <a
           href="https://twitter.com/sickpayfund"
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-twitter"></i>
+          <i aria-hidden className="fab fa-twitter"></i>
         </a>
         <a
           href="https://www.facebook.com/sickpayfund"
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-facebook-f"></i>
+          <i aria-hidden className="fab fa-facebook-f"></i>
         </a>
       </div>
     </footer>

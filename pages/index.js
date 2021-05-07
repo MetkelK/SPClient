@@ -16,6 +16,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
         <script
+          async
+          rel="preconnect"
           src="https://kit.fontawesome.com/3ce30db80b.js"
           crossorigin="anonymous"
         ></script>

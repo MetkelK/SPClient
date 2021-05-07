@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className={styles.nav}>
-      <div className={styles.navImage}>
+    <nav className="nav">
+      <div className="navImage">
         <Link href="/">
           <a>
             <Image
@@ -17,21 +17,12 @@ export default function Navbar() {
           </a>
         </Link>
       </div>
-      <div className={styles.navLinks}>
-        {/* <a href="https://www.instagram.com/sickpayfund">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/sickpayfund">
-          <i className="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.facebook.com/sickpayfund">
-          <i className="fab fa-facebook"></i>
-        </a> */}
+      <div className="navLinks">
         <Link href="/donation">
-          <a className={styles.navButton}>Contribute Now</a>
+          <a className="navButton">Contribute Now</a>
         </Link>
         <Link href="/request">
-          <a className={styles.navButton}>Apply for funds</a>
+          <a className="navButton">Apply for funds</a>
         </Link>
       </div>
     </nav>
