@@ -17,7 +17,7 @@ a {
 
 .nav {
   width: 100%;
-  /* height: 5%; */
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -152,33 +152,6 @@ a {
   text-align: center;
 }
 
-.footerSection {
-  background-color: #4f4f4f;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.footerSection p {
-  text-align: center;
-  color: #fff;
-}
-
-.footerIcons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.footerIcons > * {
-  margin: 0 0.5rem;
-  color: #fff;
-}
-
 .donateSection {
   padding: 3rem;
 }
@@ -219,6 +192,7 @@ a {
 .processSpinner {
   margin: 2rem 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
@@ -263,4 +237,43 @@ a {
 
 .requestForm button:hover {
   opacity: 0.8;
+}
+
+.request {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.requestContainer,
+.nav {
+  flex: 1 0 auto;
+}
+
+.footerSection {
+  background-color: #4f4f4f;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  flex-shrink: 0;
+}
+
+.footerSection p {
+  text-align: center;
+  color: #fff;
+}
+
+.footerIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerIcons > * {
+  margin: 0 0.5rem;
+  color: #fff;
 }

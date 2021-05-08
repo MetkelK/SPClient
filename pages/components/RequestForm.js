@@ -57,32 +57,32 @@ export default function DonateForm() {
 
   return (
     <div>
-      <div className="requestFAQ">
-        <h1>Who can access this fund?</h1>
-        <p>
+      <div className="p-12">
+        <h2 className="text-4xl mb-12">Who can access this fund?</h2>
+        <p className="mb-8">
           This fund is for anyone who should not go to work because they are
           sick, but is worried about the financial risk of doing so. We will not
           require documentation of your workplace, but trust that those
           accessing the fund are in need of immediate support.
         </p>
 
-        <h1>How many times can I apply?</h1>
-        <p>
+        <h2 className="text-4xl mb-12">How many times can I apply?</h2>
+        <p className="mb-8">
           You can apply as many times as you would like, but for right now, we
           can give out a maximum of $500 per person. This may change depending
           on how much money we have access to!
         </p>
 
-        <h1>How much can I apply for?</h1>
-        <p>
+        <h2 className="text-4xl mb-12">How much can I apply for?</h2>
+        <p className="mb-8">
           You let us know how much money you will be losing by taking the time
           off work, and we will do our best to give you as much as possible, up
           to $500 total. This maximum may change depending on donations we
           receive and the demand on the fund.
         </p>
 
-        <h1>When will I receive funds?</h1>
-        <p>
+        <h2 className="text-4xl mb-12">When will I receive funds?</h2>
+        <p className="mb-8">
           We are aiming to be fast at processing the requests. The delay depends
           on how much money we receive, when we can process your request, and
           how urgently you say you need your money. We are hoping for between
@@ -91,48 +91,83 @@ export default function DonateForm() {
         </p>
       </div>
 
-      <form onSubmit={sendMessage} className="requestForm">
-        <label htmlFor="InputFirstName">First Name</label>
-        <input
-          type="text"
-          id="InputFirstName"
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstname}
-        ></input>
+      <form
+        onSubmit={sendMessage}
+        className="w-auto flex flex-col items-center justify-center p-12"
+      >
+        <div className="w-full mb-4">
+          <label
+            className="block mb-1 text-left w-full"
+            htmlFor="InputFirstName"
+          >
+            First Name
+          </label>
+          <input
+            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            type="text"
+            id="InputFirstName"
+            onChange={(e) => setFirstName(e.target.value)}
+            value={firstname}
+          ></input>
+        </div>
+        <div className="w-full mb-4">
+          <label
+            className="block mb-1 text-left w-full"
+            htmlFor="InputLastName"
+          >
+            Last Name
+          </label>
+          <input
+            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            type="text"
+            id="InputLastName"
+            onChange={(e) => setLastName(e.target.value)}
+            value={lastname}
+          ></input>
+        </div>
+        <div className="w-full mb-4">
+          <label className="block mb-1 text-left w-full" htmlFor="InputNumber">
+            Phone Number
+          </label>
+          <input
+            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            type="tel"
+            id="InputNumber"
+            onChange={(e) => setNumber(e.target.value)}
+            value={number}
+          ></input>
+        </div>
+        <div className="w-full mb-4">
+          <label className="block mb-1 text-left w-full" htmlFor="InputEmail">
+            Email
+          </label>
+          <input
+            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            typ="email"
+            id="InputEmail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          ></input>
+        </div>
+        <div className="w-full mb-4">
+          <label className="block mb-1 text-left w-full" htmlFor="InputMessage">
+            Message
+          </label>
+          <textarea
+            className="w-full h-10 py-2 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline h-16"
+            id="InputMessage"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+          ></textarea>
+        </div>
 
-        <label htmlFor="InputLastName">Last Name</label>
-        <input
-          type="text"
-          id="InputLastName"
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastname}
-        ></input>
-
-        <label htmlFor="InputNumber">Phone Number</label>
-        <input
-          type="tel"
-          id="InputNumber"
-          onChange={(e) => setNumber(e.target.value)}
-          value={number}
-        ></input>
-
-        <label htmlFor="InputEmail">Email</label>
-        <input
-          typ="email"
-          id="InputEmail"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        ></input>
-
-        <label htmlFor="InputMessage">Message</label>
-        <textarea
-          id="InputMessage"
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-        ></textarea>
-
-        <button type="submit">Send Message</button>
-        <p>{alertmessage}</p>
+        <button
+          className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80"
+          type="submit"
+        >
+          Send Message
+        </button>
+        <span className="text-xs text-red-700">{alertmessage}</span>
         {processing && !error && (
           <div className="processSpinner">
             <i className="fa fa-spinner fa-pulse fa-fw"></i>
