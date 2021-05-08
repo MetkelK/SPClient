@@ -66,8 +66,8 @@ export default function DonateForm() {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="p-12 flex-grow ">
+    <div className="flex flex-col flex-grow">
+      <div className="p-12 ">
         <h1 className="text-5xl mb-8">How can I support the cause?</h1>
         <p className="mb-8">
           Contributing money to our fund helps provide immediate relief to
