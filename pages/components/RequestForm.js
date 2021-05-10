@@ -93,9 +93,9 @@ export default function DonateForm() {
 
       <form
         onSubmit={sendMessage}
-        className="w-auto flex flex-col items-center justify-center m-12 py-4 px-2 shadow-lg rounded-sm "
+        className="w-auto flex flex-col items-center justify-center m-12 py-4 px-2 shadow-lg rounded-sm"
       >
-        <div className="w-full mb-4 px-4 flex flex-row ">
+        <div className="w-full mb-4 px-4 flex flex-row">
           <input
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
@@ -107,7 +107,7 @@ export default function DonateForm() {
             value={firstname}
           ></input>
         </div>
-        <div className="w-full mb-4 px-4 flex flex-row ">
+        <div className="w-full mb-4 px-4 flex flex-row">
           <input
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
@@ -119,7 +119,7 @@ export default function DonateForm() {
             value={lastname}
           ></input>
         </div>
-        <div className="w-full mb-4 px-4 flex flex-row ">
+        <div className="w-full mb-4 px-4 flex flex-row">
           <input
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="tel"
@@ -131,10 +131,10 @@ export default function DonateForm() {
             value={number}
           ></input>
         </div>
-        <div className="w-full mb-4 px-4 flex flex-row ">
+        <div className="w-full mb-4 px-4 flex flex-row">
           <input
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
-            typ="email"
+            type="email"
             id="InputEmail"
             placeholder="Email"
             title="Email"
@@ -143,7 +143,7 @@ export default function DonateForm() {
             value={email}
           ></input>
         </div>
-        <div className="w-full mb-4 px-4 flex flex-row ">
+        <div className="w-full mb-4 px-4 flex flex-row">
           <textarea
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             id="InputMessage"

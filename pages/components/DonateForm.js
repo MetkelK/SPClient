@@ -108,7 +108,7 @@ export default function DonateForm() {
       >
         <div className="flex flex-row w-auto items-center justify-center mb-4 shadow-md rounded-sm border border-gray-500 border-opacity-5">
           <label
-            className="block text-sm font-medium text-gray-700 p-2 "
+            className="block text-sm font-medium text-gray-700 p-2"
             htmlFor="donationAmount"
           >
             Amount
@@ -120,13 +120,13 @@ export default function DonateForm() {
             onChange={handleChange}
             value={amount}
             min="1"
-            className="py-2 pl-1 mr-0  text-gray-800 bg-white "
+            className="py-2 pl-1 mr-0 text-gray-800 bg-white"
             placeholder="0.00"
           ></input>
         </div>
         <button
           disabled={disabled}
-          className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80 disabled:opacity-50 "
+          className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80 disabled:opacity-50"
           type="submit"
         >
           Donate
