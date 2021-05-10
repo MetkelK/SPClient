@@ -18,7 +18,7 @@ export default function Home() {
           alt="Banner Image"
         />
       </div>
-      <div className="p-12">
+      <div className="px-12 pt-12">
         <h2 className="text-4xl mb-12">
           Who is the Sick Pay Solidarity Collective?
         </h2>
@@ -34,13 +34,13 @@ export default function Home() {
           financial instability and who lack paid sick days, all while the
           battle for permanent and universal sick leave is being waged.
         </p>
-        <h3 className="text-3xl mb-12">
+        <h3 className="text-3xl text-center mb-4">
           *THIS PAGE IS UNDER DEVELOPMENT - APPLICATION FORM, TRANSLATIONS AND
           MORE RESOURCES ARE COMING SOON*
         </h3>
       </div>
 
-      <div className="p-12 text-center">
+      <div className="px-12 pt-12 text-center">
         <Link href="/donation">
           <a className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80">
             Contribute Now
@@ -66,7 +66,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="p-12">
+      <div className="px-12 pt-12">
         <h2 className="text-4xl mb-8">FAQs</h2>
         <div className="grid lg:grid-cols-3 lg:grid-rows-2 gap-2 md:grid-cols-1 md:grid-rows-6">
           <div className="p-1">
