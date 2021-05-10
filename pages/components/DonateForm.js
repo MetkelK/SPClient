@@ -106,9 +106,9 @@ export default function DonateForm() {
         onSubmit={handleSubmit}
         className="w-auto flex flex-col items-center justify-center p-12 flex-grow-0 mx-auto md:w-1/2 lg:"
       >
-        <div className="flex flex-row w-full items-center justify-center border border-gray-300 divide-solid mb-4">
+        <div className="flex flex-row w-auto items-center justify-center mb-4 shadow-md rounded-sm border border-gray-500 border-opacity-5">
           <label
-            className="block text-sm font-medium text-gray-700 p-2"
+            className="block text-sm font-medium text-gray-700 p-2 "
             htmlFor="donationAmount"
           >
             Amount
@@ -120,23 +120,23 @@ export default function DonateForm() {
             onChange={handleChange}
             value={amount}
             min="1"
-            className="py-2 pl-1 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+            className="py-2 pl-1 mr-0  text-gray-800 bg-white "
             placeholder="0.00"
           ></input>
         </div>
         <button
           disabled={disabled}
-          className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80 disabled:opacity-50"
+          className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80 disabled:opacity-50 "
           type="submit"
         >
           Donate
         </button>
-        <div className="w-full">
+        <div className="w-full flex flex-col items-center justify-center">
           {processing && (
-            <i className="fa fa-spinner fa-pulse fa-fw text-5xl"></i>
+            <i className="fa fa-spinner fa-pulse fa-fw text-5xl my-4"></i>
           )}
-          {hold && <p className="text-gray-400 text-center"> Please wait</p>}
-          {error && <p className="text-red-600 text-center">error</p>}
+          {hold && <p className="text-gray-400 my-4"> Please wait</p>}
+          {error && <p className="text-red-600 my-4">error</p>}
         </div>
       </form>
     </div>

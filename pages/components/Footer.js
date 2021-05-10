@@ -1,6 +1,3 @@
-import styles from "../../styles/Home.module.css";
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="bg-gray-600 flex flex-col items-center justify-center py-4">

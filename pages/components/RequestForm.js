@@ -93,69 +93,63 @@ export default function DonateForm() {
 
       <form
         onSubmit={sendMessage}
-        className="w-auto flex flex-col items-center justify-center p-12"
+        className="w-auto flex flex-col items-center justify-center m-12 py-4 px-2 shadow-lg rounded-sm "
       >
-        <div className="w-full mb-4">
-          <label
-            className="block mb-1 text-left w-full"
-            htmlFor="InputFirstName"
-          >
-            First Name
-          </label>
+        <div className="w-full mb-4 px-4 flex flex-row ">
           <input
-            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
             id="InputFirstName"
+            placeholder="First Name"
+            title="First Name"
+            aria-label="First Name"
             onChange={(e) => setFirstName(e.target.value)}
             value={firstname}
           ></input>
         </div>
-        <div className="w-full mb-4">
-          <label
-            className="block mb-1 text-left w-full"
-            htmlFor="InputLastName"
-          >
-            Last Name
-          </label>
+        <div className="w-full mb-4 px-4 flex flex-row ">
           <input
-            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
             id="InputLastName"
+            placeholder="Last Name"
+            title="Last Name"
+            aria-label="Last Name"
             onChange={(e) => setLastName(e.target.value)}
             value={lastname}
           ></input>
         </div>
-        <div className="w-full mb-4">
-          <label className="block mb-1 text-left w-full" htmlFor="InputNumber">
-            Phone Number
-          </label>
+        <div className="w-full mb-4 px-4 flex flex-row ">
           <input
-            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="tel"
             id="InputNumber"
+            placeholder="Telephone"
+            title="Telephone"
+            aria-label="Telephone"
             onChange={(e) => setNumber(e.target.value)}
             value={number}
           ></input>
         </div>
-        <div className="w-full mb-4">
-          <label className="block mb-1 text-left w-full" htmlFor="InputEmail">
-            Email
-          </label>
+        <div className="w-full mb-4 px-4 flex flex-row ">
           <input
-            className="w-full h-10 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline"
+            className="w-full h-auto p-3 placeholder-gray-600 border-b"
             typ="email"
             id="InputEmail"
+            placeholder="Email"
+            title="Email"
+            aria-label="Email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           ></input>
         </div>
-        <div className="w-full mb-4">
-          <label className="block mb-1 text-left w-full" htmlFor="InputMessage">
-            Message
-          </label>
+        <div className="w-full mb-4 px-4 flex flex-row ">
           <textarea
-            className="w-full h-10 py-2 px-3 text-base placeholder-gray-600 border border-gray-500 rounded-lg focus:shadow-outline h-16"
+            className="w-full h-auto p-3 placeholder-gray-600 border-b"
             id="InputMessage"
+            placeholder="Message"
+            title="Message"
+            aria-label="Message"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
           ></textarea>
