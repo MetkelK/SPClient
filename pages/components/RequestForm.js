@@ -161,7 +161,11 @@ export default function DonateForm() {
         >
           Send Message
         </button>
-        <span className="text-xs text-red-700">{alertmessage}</span>
+        {alertmessage == "Message Sent" ? (
+          <span className="text-xs text-green-700">{alertmessage}</span>
+        ) : (
+          <span className="text-xs text-red-700">{alertmessage}</span>
+        )}
         {processing && !error && (
           <div className="processSpinner">
             <i className="fa fa-spinner fa-pulse fa-fw"></i>
