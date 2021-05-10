@@ -100,9 +100,6 @@ export default function DonateForm() {
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
             id="InputFirstName"
-            placeholder="First Name"
-            title="First Name"
-            aria-label="First Name"
             onChange={(e) => setFirstName(e.target.value)}
             value={firstname}
           ></input>
@@ -112,9 +109,6 @@ export default function DonateForm() {
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="text"
             id="InputLastName"
-            placeholder="Last Name"
-            title="Last Name"
-            aria-label="Last Name"
             onChange={(e) => setLastName(e.target.value)}
             value={lastname}
           ></input>
@@ -124,9 +118,6 @@ export default function DonateForm() {
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="tel"
             id="InputNumber"
-            placeholder="Telephone"
-            title="Telephone"
-            aria-label="Telephone"
             onChange={(e) => setNumber(e.target.value)}
             value={number}
           ></input>
@@ -136,9 +127,6 @@ export default function DonateForm() {
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             type="email"
             id="InputEmail"
-            placeholder="Email"
-            title="Email"
-            aria-label="Email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           ></input>
@@ -147,9 +135,6 @@ export default function DonateForm() {
           <textarea
             className="w-full h-auto p-3 placeholder-gray-600 border-b"
             id="InputMessage"
-            placeholder="Message"
-            title="Message"
-            aria-label="Message"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
           ></textarea>
