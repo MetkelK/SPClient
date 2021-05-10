@@ -93,7 +93,7 @@ export default function DonateForm() {
 
       <form
         onSubmit={sendMessage}
-        className="w-auto flex flex-col items-center justify-center m-12 py-4 px-2 shadow-xl rounded"
+        className="w-auto flex flex-col items-center justify-center m-4 py-4 px-2 shadow-xl rounded"
       >
         <div className="w-full mb-4 px-4 flex flex-row">
           <input
