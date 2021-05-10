@@ -104,7 +104,7 @@ export default function DonateForm() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="w-auto flex flex-col items-center justify-center p-12 flex-grow-0 mx-auto md:w-1/2 lg:1/3"
+        className="w-auto flex flex-col items-center justify-center p-12 flex-grow-0 mx-auto "
       >
         <div className="flex flex-row w-auto items-center justify-center mb-4 shadow-lg rounded-sm border border-gray-500 border-opacity-5">
           <label
