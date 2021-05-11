@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export default function DonateForm() {
   const [firstname, setFirstName] = useState("");
@@ -168,9 +169,7 @@ export default function DonateForm() {
           <span className="text-xs text-red-700">{alertmessage}</span>
         )}
         {processing && !error && (
-          <div className="processSpinner">
-            <i className="fa fa-spinner fa-pulse fa-fw"></i>
-          </div>
+          <FontAwesomeIcon icon={faSpinner} spin size="2x" />
         )}
       </form>
     </div>

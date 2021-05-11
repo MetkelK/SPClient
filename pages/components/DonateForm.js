@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE);
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export default function DonateForm() {
   const [hold, setHold] = useState(false);
@@ -132,9 +134,7 @@ export default function DonateForm() {
           Donate
         </button>
         <div className="w-full flex flex-col items-center justify-center">
-          {processing && (
-            <i className="fa fa-spinner fa-pulse fa-fw text-5xl my-4"></i>
-          )}
+          {processing && <FontAwesomeIcon icon={faSpinner} spin size="2x" />}
           {hold && <p className="text-gray-400 my-4"> Please wait</p>}
           {error && <p className="text-red-600 my-4">error</p>}
         </div>

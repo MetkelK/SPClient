@@ -19,7 +19,7 @@ export default function Home() {
         />
       </div>
       <div className="px-12 pt-12">
-        <h2 className="text-4xl mb-12">
+        <h2 className="text-center text-4xl mb-12">
           Who is the Sick Pay Solidarity Collective?
         </h2>
         <p className="mb-8">
