@@ -1,3 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-600 flex flex-col items-center justify-center py-4">
@@ -11,7 +18,7 @@ export default function Footer() {
           rel="noreferrer"
           className="text-white px-4"
         >
-          <i aria-hidden className="fab fa-instagram"></i>
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a
           href="https://twitter.com/sickpayfund"
@@ -19,7 +26,7 @@ export default function Footer() {
           rel="noreferrer"
           className="text-white px-4"
         >
-          <i aria-hidden className="fab fa-twitter"></i>
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
         <a
           href="https://www.facebook.com/sickpayfund"
@@ -27,7 +34,7 @@ export default function Footer() {
           rel="noreferrer"
           className="text-white px-4"
         >
-          <i aria-hidden className="fab fa-facebook-f"></i>
+          <FontAwesomeIcon icon={faFacebook} />
         </a>
       </div>
     </footer>

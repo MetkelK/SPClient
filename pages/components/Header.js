@@ -11,12 +11,12 @@ export default function Header() {
         />
         <link rel="icon" href="/favicon.ico" />
 
-        <script
+        {/* <script
           async
           rel="preconnect"
           src="https://kit.fontawesome.com/3ce30db80b.js"
           crossorigin="anonymous"
-        ></script>
+        ></script> */}
       </Head>
     </div>
   );
