@@ -5,25 +5,21 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="bg-black w-full flex flex-row items-center justify-between py-4 w-full">
-      <div className="w-28 ml-6">
+      <div className="w-28 ml-4 md:ml-8 lg:ml-12">
         <Link href="/">
           <a>
-            {/* <Image
-              src="/1+1+Sick+Pay+Logo.png"
-              alt="Banner Image"
-              layout="fill"
-              objectFit="contain"
-            /> */}
             <img className="" src="/1+1+Sick+Pay+Logo.png" />
           </a>
         </Link>
       </div>
-      <div className="w-auto text-right mr-6 flex items-center">
+      <div className="w-auto text-right flex items-center mr-4 md:mr-8 lg:mr-12">
         <Link href="/donation">
-          <a className="p-2 my-0 mx-1 text-white text-center">Contribute Now</a>
+          <a className="p-1 my-0 mx-1 text-white text-center text-sm md:text-base lg:text-lg">
+            Contribute Now
+          </a>
         </Link>
         <Link href="/request">
-          <a className="p-2 my-0 mx-1 text-white text-center">
+          <a className="p-1 my-0 mx-1 text-white text-center text-sm md:text-base lg:text-lg">
             Apply for funds
           </a>
         </Link>

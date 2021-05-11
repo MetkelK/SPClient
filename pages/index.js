@@ -10,7 +10,6 @@ export default function Home() {
     <div>
       <Header />
       <Navbar />
-
       <div className="w-full bg-black">
         <img
           className="object-cover mx-auto"
@@ -18,47 +17,47 @@ export default function Home() {
           alt="Banner Image"
         />
       </div>
-      <div className="px-12 pt-12">
-        <h2 className="text-center text-4xl mb-12">
+      <div className="px-12 pt-12 space-y-8">
+        <h2 className="text-center text-4xl ">
           Who is the Sick Pay Solidarity Collective?
         </h2>
-        <p className="mb-8">
+        <p className="">
           The Sick Pay Solidarity Collective are workers who want universal paid
           sick days. Until we get them, we created this fund to support our
           community.
         </p>
-        <p className="mb-8">
+        <p className="">
           Though many of us are part of many different organizations with
           diverse social justice goals, the aim of this particular constellation
           of people is to create immediate relief for any workers facing
           financial instability and who lack paid sick days, all while the
           battle for permanent and universal sick leave is being waged.
         </p>
-        <h3 className="text-3xl text-center mb-4">
+        <h3 className="text-3xl text-center ">
           *THIS PAGE IS UNDER DEVELOPMENT - APPLICATION FORM, TRANSLATIONS AND
           MORE RESOURCES ARE COMING SOON*
         </h3>
       </div>
 
-      <div className="px-12 pt-12 text-center">
+      <div className="px-12 pt-12 space-y-8 text-center">
         <Link href="/donation">
           <a className="mb-4 rounded-full inline-block text-white bg-indigo-500 py-4 px-6 transition-opacity duration-150 ease-in-out transform hover:opacity-80">
             Contribute Now
           </a>
         </Link>
-        <h2 className="text-4xl mb-12">
+        <h2 className="text-center text-4xl">
           SUPPORT YOUR COMMUNITY BY DONATING TO THE SICK PAY SOLIDARITY FUND
         </h2>
-        <p className="mb-8">
+        <p className="text-left">
           As COVID-19 numbers surge, the Ontario Government has routinely
           rejected demands to implement a paid sick leave program, forcing many
           workers to choose between wages or their health.{" "}
         </p>
-        <p className="mb-8">
+        <p className="text-left">
           The Sick Pay Solidarity Fund responds to the urgent and immediate need
           for paid sick relief now for all workers in Ontario.{" "}
         </p>
-        <p className="mb-8">
+        <p className="text-left">
           We invite anyone who is feeling sick or needs to isolate and is
           concerned about the financial implications of staying home, to apply
           to this fund. We aim to provide this relief fund until there are
@@ -67,7 +66,7 @@ export default function Home() {
       </div>
 
       <div className="px-12 pt-12">
-        <h2 className="text-4xl mb-8">FAQs</h2>
+        <h2 className="text-4xl mb-12">FAQs</h2>
         <div className="grid lg:grid-cols-3 lg:grid-rows-2 gap-2 md:grid-cols-1 md:grid-rows-6">
           <div className="p-1">
             <h3 className="text-3xl mb-8">Who can access this fund?</h3>

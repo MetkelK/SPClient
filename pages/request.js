@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 export default function Requests() {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Header />
       <Navbar />
       <RequestForm />

@@ -58,33 +58,33 @@ export default function DonateForm() {
   };
 
   return (
-    <div>
-      <div className="p-12">
-        <h2 className="text-4xl mb-12">Who can access this fund?</h2>
-        <p className="mb-8">
+    <div className="flex flex-col flex-grow">
+      <div className="p-12 space-y-8">
+        <h2 className="text-4xl">Who can access this fund?</h2>
+        <p>
           This fund is for anyone who should not go to work because they are
           sick, but is worried about the financial risk of doing so. We will not
           require documentation of your workplace, but trust that those
           accessing the fund are in need of immediate support.
         </p>
 
-        <h2 className="text-4xl mb-12">How many times can I apply?</h2>
-        <p className="mb-8">
+        <h2 className="text-4xl">How many times can I apply?</h2>
+        <p>
           You can apply as many times as you would like, but for right now, we
           can give out a maximum of $500 per person. This may change depending
           on how much money we have access to!
         </p>
 
-        <h2 className="text-4xl mb-12">How much can I apply for?</h2>
-        <p className="mb-8">
+        <h2 className="text-4xl">How much can I apply for?</h2>
+        <p>
           You let us know how much money you will be losing by taking the time
           off work, and we will do our best to give you as much as possible, up
           to $500 total. This maximum may change depending on donations we
           receive and the demand on the fund.
         </p>
 
-        <h2 className="text-4xl mb-12">When will I receive funds?</h2>
-        <p className="mb-8">
+        <h2 className="text-4xl">When will I receive funds?</h2>
+        <p>
           We are aiming to be fast at processing the requests. The delay depends
           on how much money we receive, when we can process your request, and
           how urgently you say you need your money. We are hoping for between
