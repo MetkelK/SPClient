@@ -68,7 +68,7 @@ export default function DonateForm() {
   };
 
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col flex-grow lg:w-3/4 xl:w-1/2 mx-auto">
       <div className="p-12 ">
         <h1 className="text-5xl mb-8">How can I support the cause?</h1>
         <p className="mb-8">

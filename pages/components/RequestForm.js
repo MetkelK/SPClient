@@ -58,7 +58,7 @@ export default function DonateForm() {
   };
 
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col flex-grow lg:w-3/4 xl:w-1/2 mx-auto">
       <div className="p-12 space-y-8">
         <h2 className="text-4xl">Who can access this fund?</h2>
         <p>
@@ -95,7 +95,7 @@ export default function DonateForm() {
 
       <form
         onSubmit={sendMessage}
-        className="flex flex-col items-center justify-center mx-4 mb-12 py-4 px-2 shadow-xl rounded md:w-2/3 md:mx-auto lg:w-1/2 lg:mx-auto xl:w-1/3 xl:mx-auto"
+        className="flex flex-col items-center justify-center mx-4 lg:mx-12 xl:mx-16 mb-12 py-4 px-2 shadow-xl rounded "
       >
         <div className="w-full mb-4 px-4 flex flex-row">
           <input
