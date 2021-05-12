@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sick Pay Solidarity Fund
 
-## Getting Started
+This project is a mockup of the [Sick Pay Solidarity Fund](https://www.sickpaysolidarity.ca/)
 
-First, run the development server:
+[Frontend Site](https://sick-pay-fund.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[Github link to Backend Server](https://github.com/MetkelK/SPServer)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The site needed to take sick pay requests from users that could be easily viewed by an administrator while also processing payments in the form of donations. A headless cms seemed like the best approach and strapi was chosen for its role-based access control, controller customization and plugins support. Stripe was chosen as a payment processor due to its extensive documentation and testing environment.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Requests
 
-## Learn More
+Request page features a form that takes info and sends it to MongoDB. Basic validation is included along with a message status display.
 
-To learn more about Next.js, take a look at the following resources:
+### Donations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Stripe is run in test mode and you can use the following card numbers to process a payment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Test Card Number
 
-## Deploy on Vercel
+| Card             | Number           |
+| ---------------- | ---------------- |
+| Visa             | 4242424242424242 |
+| Mastercard       | 5555555555554444 |
+| American Express | 378282246310005  |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can also test for specific responses and errors. Stripe checkout will handle any issues that come up.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Testing for Responses & Errors
+
+| Scenario                                   | Number           |
+| ------------------------------------------ | ---------------- |
+| Charge is declined with insufficient funds | 4000000000009995 |
+| Charge is declined with lost card          | 4000000000009987 |
+| Charge is declined with stolen card        | 4000000000009979 |
+| Charge is declined with expired card       | 4000000000000069 |
+
+## Technology
+
+### Front-end
+
+- NextJs
+- Stripe
+- Tailwind CSS
+- Font Awesome
+
+### Back-end
+
+- Strapi
+- Stripe
+- MongoDB

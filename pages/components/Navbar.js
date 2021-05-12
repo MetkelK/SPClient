@@ -8,7 +8,11 @@ export default function Navbar() {
       <div className="w-28 ml-4 md:ml-8 lg:ml-12">
         <Link href="/">
           <a>
-            <img className="" src="/1+1+Sick+Pay+Logo.png" />
+            <img
+              className=""
+              src="/1+1+Sick+Pay+Logo.png"
+              alt="Sick Pay Logo"
+            />
           </a>
         </Link>
       </div>
