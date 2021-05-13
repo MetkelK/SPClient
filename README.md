@@ -2,9 +2,9 @@
 
 This project is a mockup of the [Sick Pay Solidarity Fund](https://www.sickpaysolidarity.ca/)
 
-[Frontend Site](https://sick-pay-fund.vercel.app/)
+[Live Site](https://sick-pay-fund.vercel.app/)
 
-[Github link to Backend Server](https://github.com/MetkelK/SPServer)
+[Backend Server](https://github.com/MetkelK/SPServer)
 
 ## About
 
@@ -78,7 +78,7 @@ In the DonateForm.js component replace process.env.NEXT_PUBLIC_STRIPE with the k
 ```
 git clone https://github.com/MetkelK/SPServer.git
 
-npm install
+yarn install
 
 ```
 
