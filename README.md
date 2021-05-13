@@ -53,3 +53,33 @@ You can also test for specific responses and errors. Stripe checkout will handle
 - Strapi
 - Stripe
 - MongoDB
+
+## Install
+
+### Create stripe account
+
+Go to [Stripe](https://stripe.com/docs), create an account and get an api key
+
+### Create front-end client
+
+```
+
+git clone https://github.com/MetkelK/SPClient.git
+
+npm install
+
+
+```
+
+In the DonateForm.js component replace process.env.NEXT_PUBLIC_STRIPE with the key on your stripe account
+
+### Create back-end server
+
+```
+git clone https://github.com/MetkelK/SPServer.git
+
+npm install
+
+```
+
+In the DonateForm and RequestForm components replace process.env.NEXT_PUBLIC_API_URL with localhost:1337
